@@ -9,8 +9,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - uses: actions/checkout@v4
       - name: Echo node version
         run: |
           node -v
-          pwd
           ls -a
