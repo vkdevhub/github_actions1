@@ -11,4 +11,4 @@ jobs:
       - name: Change node version
         run: wget https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh && bash install.sh && source ~/.bashrc
       - name: Echo nvm version
-        run: /home/runner/.config/nvm -v
+        run: /home/runner/.config/nvm/nvm -v
