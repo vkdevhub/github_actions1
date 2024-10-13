@@ -1,0 +1,24 @@
+name: Second test workflow
+
+on: push
+
+jobs:
+  run_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Echo node version Ubuntu
+        run: node -v
+  run_parallel_job:
+    runs-on: windows-latest
+    steps:
+      - name: Echo node version Windows
+        run: node -v
+  run_second_job:
+    runs-on: macos-latest
+    needs: run_first_job
+    steps:
+      - name: Echo node version MacOS
+        run: node -v

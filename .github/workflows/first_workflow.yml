@@ -1,6 +1,6 @@
 name: First test workflow
 
-on: push
+on: workflow_dispatch
 
 jobs:
   run_first_job:
