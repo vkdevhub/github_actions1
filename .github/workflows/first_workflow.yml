@@ -1,0 +1,10 @@
+name: First test workflow
+
+on: push
+
+jobs:
+  run_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo node version
+        run: node -v
