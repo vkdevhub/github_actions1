@@ -10,4 +10,7 @@ jobs:
         with:
           node-version: 16
       - name: Echo node version
-        run: node -v
+        run: |
+          node -v
+          pwd
+          ls -a
